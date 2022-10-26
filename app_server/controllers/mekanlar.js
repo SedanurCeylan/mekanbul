@@ -3,7 +3,7 @@ var router = express.Router();
 
 const anaSayfa = function (req, res, next) {
     res.render('anasayfa', 
-    {baslık: 'SedaNur Ceylan',
+    {baslık: "Seda'nın Mutfağı",
     "sayfaBaslik" : {
         "siteAd" :"MekanBul",
         "slogan" : "Civardaki mekanları keşfet!"
