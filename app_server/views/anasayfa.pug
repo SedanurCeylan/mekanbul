@@ -1,67 +1,29 @@
-extends layout
-
-block content
-  #banner.page-header 
-    .row 
-      .col-lg-6 
-        h1 
-          | MekanBul
-          small &nbsp; Civardaki Mekanları Keşfet !
-  .row  
-    .row.list-group 
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4 
-          a(href='/mekan') Seda'nın Mutfağı
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-        span.badge.pull-right.badge-default 10km  
-        p.address Merkez  
-        p 
-          span.label.label-warning Günlük El yapımı Ürünler
-          
-  .row  
-    .row.list-group 
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4 
-          a(href='/mekan') SDÜ Cam Kafe
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-          span.glyphicon.glyphicon-star-empty
-          span.glyphicon.glyphicon-star-empty 
-        span.badge.pull-right.badge-default 1km  
-        p.address SDÜ Batı Kampüsü  
-        p 
-          span.label.label-warning kahve  
-          | &nbsp;
-          span.label.label-warning Paketli gıdalar 
-
-  .row  
-    .row.list-group 
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4 
-          a(href='/mekan') Gloria Jean's
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty 
-        span.badge.pull-right.badge-default 3km  
-        p.address SDÜ Doğu Kampüsü 
-        p 
-          span.label.label-warning Kahve  
-          | &nbsp;
-          span.label.label-warning Kurabiye
-                  
+doctype html
+html
+  head
+    meta(name='viewport',content='width=device-width,initial-scale=1.0')
+    title= baslik
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+  body
+    .navbar-default.navbar.navbar-fixed-top
+      .container 
+        .navbar-header 
+          a.navbar-brand(href='/' ) MekanBul
+          button.navbar-toggle(type='button',data-toggle='collapse',
+          data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse 
+          ul.nav.navbar-nav 
+            li 
+              a(href='/hakkinda') Hakkında            
+  .container 
+    block content 
+    footer 
+      small &copy; Muhammed Burak Tamaka  2022      
+  script(src='/javascripts/jquery-3.6.1.min.js')  
+  script(src='/bootstrap/js/bootstrap.min.js') 
                   
   
         
