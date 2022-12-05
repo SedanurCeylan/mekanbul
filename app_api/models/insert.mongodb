@@ -6,7 +6,6 @@ db.mekanlar.insertOne(
   "adres": "Barida Hotel Karşısı",
   "puan": 5,
   "imkanlar": [
-
     "kahve",
     "pasta"
   ],
