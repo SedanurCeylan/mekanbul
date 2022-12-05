@@ -1,8 +1,11 @@
+
+
 const hakkinda = function (req, res, next) {
-    res.render('hakkinda', { title: 'Hakkinda' });
+    res.render('hakkinda', { title: 'Haydar Ozluk' });
 }
 
+module.exports = {
 
-module.exports={
     hakkinda
+
 }
