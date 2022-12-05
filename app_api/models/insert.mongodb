@@ -2,17 +2,17 @@ const database = 'mekanbul';
 use(database);
 db.mekanlar.insertOne(
 {
-  "ad": "Starbucks",
-  "adres": "Centrum Garden",
+  "ad": "Burç Fırın",
+  "adres": "Barida Hotel Karşısı",
   "puan": 5,
   "imkanlar": [
-    "çay",
+
     "kahve",
     "pasta"
   ],
   "koordinat": [
-    37.83226584629666,
-    30.524732239878013
+    36.83226584629666,
+    31.524732239878013
   ],
   "saatler": [
     {
