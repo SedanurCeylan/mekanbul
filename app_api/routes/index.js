@@ -1,4 +1,6 @@
+
 var express=require("express");
+const { route } = require("../../app");
 var router=express.Router();
 var ctrlMekanlar=require("../controllers/mekanlar");
 var ctrlYorumlar=require("../controllers/yorumlar");
@@ -24,10 +26,5 @@ router
 .delete(ctrlYorumlar.yorumSil);
 
 module.exports=router;
-
-
-
-
-
 
 
